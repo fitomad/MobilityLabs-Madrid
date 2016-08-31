@@ -86,8 +86,7 @@ class BunnyClient
 			:mandatory => true, 
 			:routing_key => "messages", 
 			:type => type,
-			:content_type => "application/json",
-			:user_id => @q_user)
+			:content_type => "application/json")
 
 		@send_count += 1
 
