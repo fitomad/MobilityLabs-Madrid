@@ -30,8 +30,8 @@ class BunnyClient
 		@error_count = 0
 
 		@q_name = "messages"
-		@q_user = "WEB.SERV.adolfo.vera@outlook.com"
-		@q_password = "15F8BF9E-1B8C-47A7-8587-25A9B459E534"
+		@q_user = ""
+		@q_password = ""
 
 		@connection_hash = 
 		{
