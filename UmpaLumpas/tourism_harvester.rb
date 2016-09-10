@@ -37,8 +37,6 @@ class TourismHarvester < Harvester
 			publish_message(rabbit_message, "desappstre.venues") 
 		end
 
-		@bunny.close()
-
 		puts(@bunny.status_message())
 	end
 

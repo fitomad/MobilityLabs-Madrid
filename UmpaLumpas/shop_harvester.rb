@@ -37,8 +37,6 @@ class ShopHarvester < Harvester
 			publish_message(rabbit_message, "desappstre.shops") 
 		end
 
-		@bunny.close()
-
 		puts(@bunny.status_message())
 	end
 

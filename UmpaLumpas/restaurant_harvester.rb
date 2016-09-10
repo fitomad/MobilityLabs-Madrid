@@ -35,8 +35,6 @@ class RestaurantHarvester < Harvester
 			publish_message(rabbit_message, "desappstre.restaurant") 
 		end
 
-		@bunny.close()
-
 		puts(@bunny.status_message())
 	end
 

@@ -37,8 +37,6 @@ class NightLifeHarvester < Harvester
 			publish_message(rabbit_message, "desappstre.nightlife") 
 		end
 
-		@bunny.close()
-
 		puts(@bunny.status_message())
 	end
 

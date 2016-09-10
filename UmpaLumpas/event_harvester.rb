@@ -35,8 +35,6 @@ class EventHarvester < Harvester
 			publish_message(rabbit_message, "desappstre.events") 
 		end
 
-		@bunny.close()
-
 		puts(@bunny.status_message())
 	end
 

@@ -158,8 +158,6 @@ class Harvester
 	def publish_message(hash, type_name)
 		rabbit_json = JSON.generate(hash)
 		#puts rabbit_json
-		if @bunny.ok? then
-			@bunny.publish_datagram(rabbit_json, type_name)
-		end
+		@bunny.publish_datagram(rabbit_json, type_name)
 	end
 end

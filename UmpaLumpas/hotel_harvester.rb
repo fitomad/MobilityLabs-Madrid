@@ -34,9 +34,7 @@ class HotelHarvester < Harvester
 
 			publish_message(rabbit_message, "desappstre.hotels") 
 		end
-
-		@bunny.close()
-
+		
 		puts(@bunny.status_message())
 	end
 
